@@ -136,7 +136,7 @@ sudo systemctl start nginx
 ```
 Test your server: open a browser and go to http://15.135.223.199. You should see the default Nginx welcome page.
 
-###Step 4: Add Your Website Files
+### Step 4: Add Your Website Files
 Replace the default page with your own HTML/CSS.
 
 ```bash
@@ -156,7 +156,7 @@ A	@	15.135.223.199	600
 A	www	15.135.223.199	600
 Save changes. DNS propagation can take 5–30 minutes.
 
-Step 6: Install SSL Certificate (HTTPS)
+### Step 6: Install SSL Certificate (HTTPS)
 bash
 # Install Certbot for Nginx
 sudo apt install certbot python3-certbot-nginx -y
@@ -175,7 +175,7 @@ When asked, select 2: Redirect – this forces all HTTP traffic to HTTPS.
 
 After success, visit https://talhatechub.online. You’ll see a padlock in the address bar.
 
-Step 7: Create a Live Server Status Script
+### Step 7: Create a Live Server Status Script
 This script generates a webpage that shows real‑time server metrics.
 
 bash
@@ -226,7 +226,7 @@ bash
 cat /var/www/html/status.html
 You should see HTML output. Now open in a browser: https://talhatechub.online/status.html
 
-Step 8: Automate Status Updates with Cron
+### Step 8: Automate Status Updates with Cron
 Cron will refresh the status page every 5 minutes automatically.
 
 bash
@@ -238,7 +238,7 @@ bash
 crontab -l
 You should see a line with */5 * * * * /home/ubuntu/scripts/server_status.sh.
 
-Step 9: Link Status Page on Your Website
+### Step 9: Link Status Page on Your Website
 Add a visible link to the status page from your main website.
 
 bash
@@ -250,7 +250,7 @@ html
 <a href="/status.html">📊 Live Server Status</a>
 Save and exit. Then refresh https://talhatechub.online – you will see the link.
 
-Step 10: Final Verification
+### Step 10: Final Verification
 Test all three URLs in your browser:
 
 Service	URL	Expected result
@@ -259,7 +259,7 @@ Status page	https://talhatechub.online/status.html	Live server metrics
 HTTPS	Check padlock in address bar	Secure connection
 If all work, your server is complete.
 
-How to Rebuild from Scratch in Under 1 Hour
+## How to Rebuild from Scratch in Under 1 Hour
 Launch a new EC2 instance with the same security group rules (Step 1).
 
 SSH into it (Step 2).
@@ -274,7 +274,7 @@ Done. Your new server is identical.
 
 💡 Tip: Save all commands in a text file. Then you can rebuild by simply copying and pasting.
 
-Troubleshooting Common Issues
+## Troubleshooting Common Issues
 Problem	Likely cause	Solution
 ssh: Connection refused	Security group missing SSH rule	Add SSH (port 22) inbound rule with source 0.0.0.0/0
 Permission denied (publickey)	Wrong key or username	Use the correct .pem file and username ubuntu
