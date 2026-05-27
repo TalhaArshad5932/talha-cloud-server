@@ -121,7 +121,7 @@ Instruction: Add a cron job to refresh the status page.
 Instruction: Add a link to /status.html in your index.html.
 
 ```bash
-echo '<a href="/status.html">📊 Live Server Status</a>' | sudo tee -a /var/www/html/index.html
+echo '<a href="/status.html"> Live Server Status</a>' | sudo tee -a /var/www/html/index.html
 ```
 ### 12. Test everything
 Instruction: Open these URLs in a browser.
