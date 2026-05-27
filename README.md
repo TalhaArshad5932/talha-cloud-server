@@ -49,7 +49,7 @@ All components are **manually installed and configured** (no pre‑packaged imag
 | **Service**              | EC2 (Elastic Compute Cloud)                      |
 | **Region**               | ap‑southeast‑2 (Sydney)                          |
 | **Operating System**     | Ubuntu 24.04 LTS (HVM)                           |
-| **Instance Type**        | t2.micro (free tier eligible)                    |
+| **Instance Type**        | t3.micro (free tier eligible)                    |
 | **Architecture**         | x86_64                                           |
 | **Web Server**           | Nginx 1.24.0                                     |
 | **SSL/TLS**              | Let's Encrypt (Certbot) – auto‑renewal enabled   |
