@@ -282,7 +282,7 @@ certbot command not found	Certbot not installed	Run sudo apt install certbot pyt
 Status page shows old data	Cron not running	Run sudo ~/scripts/server_status.sh manually, then check crontab -l
 Website loads without HTTPS	Certbot didn't redirect	Re‑run sudo certbot --nginx and select option 2
 DNS not resolving	Records not saved or propagation delay	Wait 30 minutes, double‑check A records in registrar
-[References](#references)
+## References
 Let's Encrypt / Certbot Documentation
 
 AWS EC2 Documentation
