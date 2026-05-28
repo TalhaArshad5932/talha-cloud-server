@@ -206,7 +206,7 @@ pre { background: #ffffff; padding: 20px; border-radius: 8px; }
 </style>
 </head>
 <body>
-<h1>Talha's Cloud Server - Live Status</h1>
+<h1>Talha's Cloud Server  Live Status</h1>
 <pre>
 Uptime:        $(uptime)
 Memory usage:  $(free -h | grep Mem)
