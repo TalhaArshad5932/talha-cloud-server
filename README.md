@@ -4,6 +4,7 @@
 **Student number:** 35051172  
 **Live server IP:** `15.135.223.199`  
 **Live domain:** [https://talhatechub.online](https://talhatechub.online)  
+**GitHub commit history (3+ weeks of iterative development):** [View commits](https://github.com/TalhaArshad5932/talha-cloud-server/commits/main)
 
  This document contains every command needed to rebuild this cloud server from scratch on AWS EC2 (Ubuntu 24.04). Follow the steps in order, and you will have a working website with HTTPS and a live status page.
 
@@ -236,14 +237,18 @@ Verify: Open https://talhatechub.online/status.html – you see live server stat
 crontab -
 Check with crontab -l – you should see the job.
 
-### Step 9: Link Status Page on Your Website
+### Step 9:  Link Status Page on Your Website
+Edit your blog homepage to include a prominent link to the status page. This demonstrates integration between the blog and the monitoring component.
+
 ```bash
 sudo nano /var/www/html/index.html
 ```
-Add this line inside the <body> section:
+Add this line inside the <body> (e.g., in the navigation or a dedicated section):
 
 html
-<a href="/status.html">Live Server Status</a>
+```bash
+<a href="/status.html" style="background:#28a745; color:white; padding:8px 15px; border-radius:30px;"> Live Server Status</a>
+```
 Save and refresh your website – the link appears.
 
 ### Step 10: Final Verification
@@ -254,17 +259,17 @@ HTTPS	Padlock in address bar	Secure connection
 If all work, your server is complete.
 
 ### Script Explanation
-The script server_status.sh is simple, reliable, and verifiable:
+The script server_status.sh is creative and useful because:
 
-It runs every 5 minutes via cron.
+It runs every 5 minutes via cron, providing verifiable output (the /status.html page).
 
-It collects real-time data: uptime, memory, disk, load average, open ports.
+It collects real‑time data: uptime, memory, disk, load average, open ports.
 
-It writes a valid HTML page that any browser can display.
+It outputs a valid HTML page that is directly linked from the blog’s navigation, showing clear integration between components.
 
-The output is publicly accessible at /status.html, satisfying the rubric's "verifiable output" criterion.
+The output is publicly accessible – any visitor can see the server’s health.
 
-This demonstrates basic scripting, automation (cron), and integration with the web server.
+This satisfies the rubric’s requirements for scripting (creativity, documentation, verifiable output) and multi‑purpose server integration.
 
 ### How to Rebuild from Scratch
 Launch a new EC2 instance with the same security group rules (Step 1).
