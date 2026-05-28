@@ -35,7 +35,7 @@
 
 ## Project Overview
 
-This project builds a personal cloud server for my ICT171 portfolio. It hosts:
+This project builds a personal cloud server for my ICT171 blog. It hosts:
 
 - My own **static HTML/CSS website** showing my cloud computing proposal and blog ideas.  
 - A **live server status page** (`/status.html`) that displays real‑time system metrics: uptime, memory usage, disk usage, load average, and active network connections. This page is automatically refreshed every 5 minutes.
@@ -199,7 +199,7 @@ cat > $OUTPUT_FILE << EOF2
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Server Status - Talha's Cloud</title>
+<title>Server Status  Talha's Cloud</title>
 <style>
 body { font-family: monospace; background: #f0f0f0; }
 pre { background: #ffffff; padding: 20px; border-radius: 8px; }
