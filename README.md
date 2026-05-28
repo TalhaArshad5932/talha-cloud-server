@@ -190,20 +190,23 @@ nano ~/scripts/server_status.sh
 Paste the following:
 
 ```bash
+cat > ~/scripts/server_status.sh << 'EOF'
 #!/bin/bash
 OUTPUT_FILE="/var/www/html/status.html"
 
-cat > $OUTPUT_FILE << EOF
+cat > $OUTPUT_FILE << EOF2
 <!DOCTYPE html>
 <html>
-<head><title>Server Status - Talha's Cloud</title>
+<head>
+<meta charset="UTF-8">
+<title>Server Status - Talha's Cloud</title>
 <style>
 body { font-family: monospace; background: #f0f0f0; }
 pre { background: #ffffff; padding: 20px; border-radius: 8px; }
 </style>
 </head>
 <body>
-<h1>Talha's Cloud Server – Live Status</h1>
+<h1>Talha's Cloud Server - Live Status</h1>
 <pre>
 Uptime:        $(uptime)
 Memory usage:  $(free -h | grep Mem)
@@ -215,6 +218,7 @@ Last updated:  $(date)
 <p><a href="/">Back to homepage</a></p>
 </body>
 </html>
+EOF2
 EOF
 ```
 Save (Ctrl+O, Enter, Ctrl+X). Then:
