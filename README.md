@@ -4,6 +4,7 @@
 **Student number:** 35051172  
 **Live server IP:** `15.135.223.199`  
 **Live domain:** [https://talhatechub.online](https://talhatechub.online)  
+
 Although the git commit history was accidentally overwritten, the following evidence demonstrates that this project was developed over **more than 3 weeks** (as required by the rubric):
 
 - **AWS EC2 instance launch date:** `Sun Apr 19 17:05:43 2026` (visible in the server's login message – see screenshot or SSH output).  
@@ -126,6 +127,8 @@ Wait 1–2 minutes for the instance to show `Running`.
 ```bash
 ssh -i "workshop-key.pem" ubuntu@15.135.223.199
 ```
+<img width="959" height="506" alt="pic2" src="https://github.com/user-attachments/assets/2a20bf44-f0e3-4ff5-bcc5-b85c9004d458" />
+
 For Mac / Linux (Terminal)
 Open Terminal.
 
@@ -152,9 +155,13 @@ Run these commands one by one:
 ```bash
 sudo apt update
 ```
+<img width="944" height="474" alt="pic3" src="https://github.com/user-attachments/assets/0f4e94a4-5cad-4baa-a629-2d9bdcf98a8a" />
+
 ```bash
 sudo apt install nginx -y
 ```
+
+
 ```bash
 sudo systemctl enable nginx
 ```
@@ -167,7 +174,11 @@ Test: Open a browser to http://15.135.223.199 – you should see the Nginx welco
 ```bash
 sudo nano /var/www/html/index.html
 ```
-Delete everything and paste your HTML content (your proposal/blog). Save with Ctrl+O, Enter, Ctrl+X.
+<img width="845" height="193" alt="pic4" src="https://github.com/user-attachments/assets/cba6e3f2-7ce1-4d29-a1fc-76c1c87f4521" />
+then add HTML content (your proposal/blog).
+<img width="959" height="473" alt="pic5" src="https://github.com/user-attachments/assets/b6dcbfc7-8083-4b4d-9b3e-1d703d1c33c3" />
+
+Save with Ctrl+O, Enter, Ctrl+X.
 
 Refresh http://15.135.223.199 – your own website appears.
 
