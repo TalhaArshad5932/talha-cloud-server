@@ -4,7 +4,6 @@
 **Student number:** 35051172  
 **Live server IP:** `15.135.223.199`  
 **Live domain:** [https://talhatechub.online](https://talhatechub.online)  
-**GitHub commit history (3+ weeks of iterative development):** [View commits](https://github.com/TalhaArshad5932/talha-cloud-server/commits/main)
 
  This document contains every command needed to rebuild this cloud server from scratch on AWS EC2 (Ubuntu 24.04). Follow the steps in order, and you will have a working website with HTTPS and a live status page.
 
