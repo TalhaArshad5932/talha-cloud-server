@@ -118,6 +118,9 @@ Wait 1–2 minutes for the instance to show `Running`.
    cd C:\Users\TALHA\Downloads
    ```
 (Replace TALHA with your Windows username.)
+<img width="959" height="473" alt="pic1" src="https://github.com/user-attachments/assets/7f27a111-019a-40ed-b55e-0dda38a57e06" />
+
+
 3. Connect:
 
 ```bash
