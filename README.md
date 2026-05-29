@@ -323,7 +323,7 @@ Ubuntu 24.04 Server Guide
 
 ### Video Explainer
 Video link to my walkthrough:
-[Add your YouTube link here – unlisted is fine]
+
 
 The video shows the entire build process, including connecting to AWS, installing Nginx, setting up SSL, creating the status script, and demonstrating the final live website.
 
