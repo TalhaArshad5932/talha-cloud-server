@@ -8,7 +8,7 @@ Although the git commit history was accidentally overwritten, the following evid
 
 - **AWS EC2 instance launch date:** `Sun Apr 19 17:05:43 2026` (visible in the server's login message – see screenshot or SSH output).  
 - **Domain registration:** `talhatechub.online` was registered on [ April 22, 2026].  
-- **First GitHub commit (original):** May 26, 2026 (prior to accidental history loss).  
+- **First GitHub commit (original):** May 01, 2026 (prior to accidental history loss).  
 - **Continuous work:** The server has been running and receiving updates (scripts, website changes, SSL configuration) from April 19 to May 29, 2026.
 - Commit History: https://github.com/TalhaArshad5932/talha-cloud-server/commits/main/
 
