@@ -315,7 +315,7 @@ Nginx Official Documentation
 Ubuntu 24.04 Server Guide
 
 ### Video Explainer
-Video link to my walkthrough:
+Video link to my walkthrough: https://www.youtube.com/watch?v=_WCqqNQPYo0
 
 
 The video shows the entire build process, including connecting to AWS, installing Nginx, setting up SSL, creating the status script, and demonstrating the final live website.
